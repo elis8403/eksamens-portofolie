@@ -1,0 +1,242 @@
+/*fjerner automatiske styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: #FDF3E6;
+}
+
+/*tekst*/
+h1 {
+    font-size: 2rem;
+    color: rgb(233, 237, 200);
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(35, 44, 7);
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*baggrunds billeder*/
+#right {
+    height: 45rem;
+    float: right;
+}
+
+#left {
+    height: 45rem;
+    float: left;
+}
+
+/*menu*/
+ul {
+    margin-top: 10rem;
+    /*    centrere menuen på siden*/
+    margin-right: 5rem;
+    width: 100%;
+    height: 60px;
+}
+
+/*links inde i menuen*/
+ul li {
+    /*    fjerner punkter*/
+    list-style: none;
+    /*    fjerner mellemrum hvor man ikke kan klikke*/
+    display: inline;
+    /*    centere tekst*/
+    line-height: 70px;
+}
+
+/*teksten inde i menuen*/
+ul li a {
+    /*    gør så man ikke kun kan klikke på teksten, men også over og under*/
+    display: block;
+    /*    fjerner underline*/
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    font-family: 'Amatic SC', cursive;
+    color: sandybrown;
+    float: left;
+    padding: 1rem;
+    margin-top: -3rem;
+}
+
+/*hover effekt over menuen */
+ul li a span:hover {
+    background-color: rgb(233, 237, 200);
+    animation: pulse 2s;
+    color: #6A7E6F;
+}
+
+/*pulse animation til menuen*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*burger menu*/
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    margin-top: -4rem;
+    margin-left: 8rem;
+}
+
+/*    når menuen lukker*/
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav li {
+    padding: 16px 0;
+}
+
+/*    når menuen åbner*/
+.nav {
+    display: none;
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+}
+
+.change .bar {
+    background-color: sandybrown;
+}
+
+/*    rotere stregerne til et kryds*/
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+/*    fjern bar2 i midten*/
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+/*foto album grid*/
+#foto_album {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+    margin: 1rem;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vw;
+    padding: 1vw;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: rgba(210, 105, 30, 0.38);
+    text-align: center;
+}
+
+#foto {
+    width: 14vw;
+}
+
+#foto:hover {
+    transform: scale(2);
+}
+
+/*skilt*/
+#skilt tekst {
+    position: relative;
+    text-align: center;
+}
+
+#skilt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16vw;
+}
+
+h1 {
+    position: absolute;
+    top: 6rem;
+    left: 40rem;
+}
+
+/*tekst grid*/
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    float: right;
+    margin: 1rem;
+    grid-row-gap: 1vw;
+    padding: 1vw;
+    margin-top: -34.4rem;
+    margin-left: 52rem;
+    margin-right: 9rem;
+    background-color: rgba(170, 198, 177, 0.33);
+    text-align: center;
+}
+
+text {
+    line-height: 1.5em;
+}
+
+br {
+    margin-bottom: 1rem;
+}
+
+/*responsive*/
+@media (max-width: 593px) {
+    h1 {
+        font-size: 2rem;
+
+    }
+
+    #menu {
+        margin-left: 6rem;
+        margin-top: -1.5rem;
+    }
+
+    ul li a {
+        padding: 0 60px;
+    }
+}

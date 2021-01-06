@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="da">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="portfolio.css">
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Lobster+Two&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolie</title>
+</head>
+
+<body>
+    <div>
+        <img id="right" src="right.svg" alt="right">
+        <img id="left" src="left.svg" alt="left">
+    </div>
+
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <!--   Menu-->
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+
+        <ul class="nav" id="nav">
+            <li><a href="forside.html"><span>FORSIDE</span></a></li>
+            <li><a href="portfolio.html"><span>PORTFOLIO</span></a></li>
+            <li><a href="om-mig.html"><span>OM MIG</span></a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+
+    <section id="section_galleri">
+        <div class="column">
+            <a href="case.html"><img class="voks" src="design_dokumentation.png" alt="designdokumentation"></a>
+            <a href="case.html"><img class="voks" src="redesign.png" alt="redesign"></a>
+        </div>
+        <div class="column">
+            <a href="case.html"><img class="voks" src="responsive_design.png" alt="responsive_design"></a>
+            <a href="case.html"><img class="voks" src="pitch.png" alt="pitch"></a>
+            <a href="case.html"><img class="voks" src="prototype.png" alt="prototype"></a>
+        </div>
+        <div class="column">
+            <a href="case.html"><img class="voks" src="ide_udvikling.png" alt="ide_udvikling"></a>
+            <a href="case.html"><img class="voks" src="pilotprojekt.png" alt="pilotprojekt"></a>
+            <a href="case.html"><img class="voks" src="individuel_spil.png" alt="individuel_spil"></a>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+/*fjerner automatiske styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: #FDF3E6;
+}
+
+/*titel og undertitel*/
+h1 {
+    font-size: 5rem;
+    color: #c7aac3;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #6A7E6F;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+}
+
+/*baggrunds billeder*/
+#right {
+    height: 45rem;
+    float: right;
+}
+
+#left {
+    height: 45rem;
+    float: left;
+}
+
+#blomst_right {
+    width: 14.5rem;
+    float: right;
+    margin-top: 13rem;
+    margin-right: 15rem;
+    margin-left: -15rem
+}
+
+#blomst_left {
+    width: 15rem;
+    float: left;
+    margin-top: 13rem;
+    margin-left: 15rem;
+    margin-right: -15rem
+}
+
+/*menu*/
+ul {
+    /*    centrere teksten i menuen*/
+    text-align: center;
+    margin-top: 10rem;
+    /*    centrere menuen på siden*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 60px;
+}
+
+/*links inde i menuen*/
+ul li {
+    /*    fjerner punkter*/
+    list-style: none;
+    /*    fjerner mellemrum hvor man ikke kan klikke*/
+    display: inline;
+    /*    centere tekst*/
+    line-height: 70px;
+}
+
+/*teksten inde i menuen*/
+ul li a {
+    /*    gør så man ikke KUN kan klikke på teksten, men også over og under*/
+    display: block;
+    /*    fjerner underline*/
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 1000;
+    font-family: 'Amatic SC', cursive;
+    color: sandybrown;
+    /*    0 = fordi vi allerede har centreret i top/bottom*/
+    padding: 0 20px;
+}
+
+/*pulse animation til menuen*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*hover effekt over menuen*/
+ul li a:hover {
+    /*    background-color: rgb(233, 237, 200);*/
+    animation: pulse 1s ease-in;
+    color: #6A7E6F;
+
+}
+
+/*responsive*/
+@media (max-width: 1200px) {
+
+    #blomst_right,
+    #blomst_left {
+        width: 5rem;
+        margin-top: 11rem;
+    }
+
+    #left,
+    #right {
+        margin-top: -8rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: -5rem;
+    }
+
+    ul li a {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 866px) {
+
+    #blomst_right {
+        margin-right: 6rem;
+        margin-left: -9rem;
+    }
+
+    #blomst_left {
+        margin-left: 5rem;
+        margin-right: -8rem;
+    }
+}
+
+/*telefon størrelse*/
+@media (max-width: 580px) {
+
+    /*    burger menu*/
+    #menu {
+        width: 35px;
+        height: 30px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+        margin-top: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*    når menuen lukker*/
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+    }
+
+    #bar3 {
+        transform: translateY(4px);
+    }
+
+    .nav li {
+        padding: 16px 0;
+    }
+
+    /*    når menuen åbner*/
+    .nav {
+        display: none;
+        padding: 0;
+        margin: 0 20px;
+        transition: 0.3s ease;
+    }
+
+    .change .bar {
+        background-color: sandybrown;
+    }
+
+    /*    rotere stregerne til et kryds*/
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotate(45deg);
+    }
+
+    /*    fjern bar2 i midten*/
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change {
+        display: block;
+    }
+
+    /*    blomster ud til siderne*/
+    #blomst_right {
+        margin-right: 1rem;
+        margin-left: -9rem;
+    }
+
+    #blomst_left {
+        margin-left: 1rem;
+        margin-right: -8rem;
+    }
+}
