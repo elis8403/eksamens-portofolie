@@ -97,6 +97,11 @@ ul li a span:hover {
 }
 
 /*burger menu*/
+#menu-bar {
+    position: absolute;
+    margin-top: 0.5rem;
+}
+
 #menu {
     width: 35px;
     height: 30px;
