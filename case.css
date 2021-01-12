@@ -757,7 +757,8 @@ ul li a span:hover {
     #rigmor2 {
         grid-column: 1/2;
         grid-row: 1/2;
-        margin-left: 0vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #pilot_tekst {
@@ -798,7 +799,7 @@ ul li a span:hover {
     .redesign {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 2fr 0fr 0fr 0fr;
     }
 
     #redesign_tekst {
@@ -809,16 +810,25 @@ ul li a span:hover {
     #wireframe {
         grid-column: 1/2;
         grid-row: 2/3;
+        width: 35vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #redesign_billede {
         grid-column: 1/2;
         grid-row: 3/4;
+        width: 35vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #moodboard2 {
         grid-column: 1/2;
         grid-row: 4/5;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*    baggrund side-billeder*/
