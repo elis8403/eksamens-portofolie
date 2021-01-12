@@ -137,7 +137,7 @@ ul li a span:hover {
 .nav {
     display: none;
     padding: 0;
-    margin: 0 20px;
+    margin: 0 4rem;
     transition: 0.3s ease;
 }
 
@@ -189,6 +189,12 @@ ul li a span:hover {
     #section_galleri {
         margin-left: 31vw;
         max-width: 39vw;
+    }
+}
+
+@media (max-width: 1040px) {
+    #section_galleri {
+        margin-top: 5rem;
     }
 }
 

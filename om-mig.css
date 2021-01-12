@@ -54,7 +54,6 @@ ul li {
     display: inline;
     /*    centere tekst*/
     line-height: 70px;
-    margin-right: 10rem;
 }
 
 /*teksten inde i menuen*/
@@ -135,7 +134,7 @@ ul li a span:hover {
 .nav {
     display: none;
     padding: 0;
-    margin: 0 20px;
+    margin: 0 4rem;
     transition: 0.3s ease;
 }
 
@@ -182,7 +181,7 @@ ul li a span:hover {
 }
 
 #foto:hover {
-    transform: scale(2);
+    transform: scale(1.6);
 }
 
 /*skilt*/
@@ -265,6 +264,10 @@ br {
     #container {
         margin-left: 52vw;
         margin-right: 20vw;
+    }
+
+    #menu-bar {
+        margin-top: 0.5rem;
     }
 }
 

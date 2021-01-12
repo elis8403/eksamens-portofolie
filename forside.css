@@ -28,6 +28,75 @@ p {
     text-align: center;
 }
 
+/*snowflake animatino*/
+#snowflake {
+    position: absolute;
+    top: -200px;
+    right: 50vw;
+    width: 2%;
+    padding: 2em;
+    animation: fald linear 10s;
+    animation-iteration-count: infinite;
+}
+
+#snowflake2 {
+    position: absolute;
+    top: -200px;
+    right: 90vw;
+    width: 2%;
+    padding: 2em;
+    animation: fald linear 10s;
+    animation-iteration-count: infinite;
+}
+
+#snowflake3 {
+    position: absolute;
+    top: -200px;
+    right: 10vw;
+    width: 2%;
+    padding: 2em;
+    animation: fald linear 18s;
+    animation-iteration-count: infinite;
+}
+
+#snowflake4 {
+    position: absolute;
+    top: -200px;
+    right: 30vw;
+    width: 2%;
+    padding: 2em;
+    animation: fald linear 14s;
+    animation-iteration-count: infinite;
+}
+
+#snowflake5 {
+    position: absolute;
+    top: -200px;
+    right: 70vw;
+    width: 2%;
+    padding: 2em;
+    animation: fald linear 18s;
+    animation-iteration-count: infinite;
+}
+
+#snowflake6 {
+    position: absolute;
+    top: -200px;
+    right: 80vw;
+    width: 2%;
+    padding: 2em;
+    animation: fald linear 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fald {
+    0% {}
+
+    100% {
+        transform: translateY(900px);
+    }
+}
+
 /*baggrunds billeder*/
 #right {
     height: 45rem;

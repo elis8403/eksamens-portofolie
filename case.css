@@ -15,40 +15,218 @@ body {
 
 /*tekst*/
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #c7aac3;
     font-family: 'Lobster Two', cursive;
 }
 
-p {
+h2 {
     font-size: 1.5rem;
+    color: sandybrown;
+    font-family: 'Patrick Hand', cursive;
+}
+
+p {
+    font-size: 1.1rem;
     color: #6A7E6F;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*link tilbage til galleriet*/
+#portfolio_galleri {
+    float: right;
+    padding: 1vw;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    font-family: 'Amatic SC', cursive;
+    text-decoration: none;
+    color: sandybrown;
+}
+
+#portfolio_galleri:hover {
+    background-color: rgb(233, 237, 200);
+
 }
 
 /*baggrunds billeder*/
+/*right*/
 #right {
     height: 45rem;
     float: right;
-    margin-top: -2rem;
 }
 
-#baggrund1 {
-    background-image: url("right.svg");
-    position: relative;
+#right2 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 44.8rem;
+    float: right;
 }
 
+#right3 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 89.6rem;
+    float: right;
+}
+
+#right4 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 134.6rem;
+    float: right;
+}
+
+#right5 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 179rem;
+    float: right;
+}
+
+#right6 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 222.5rem;
+    float: right;
+}
+
+#right7 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 267rem;
+    float: right;
+}
+
+#right8 {
+    height: 45rem;
+    margin-right: -4.47rem;
+    margin-top: 312rem;
+    float: right;
+}
+
+#right9 {
+    height: 45rem;
+    margin-right: -4.60rem;
+    margin-top: 356rem;
+    float: right;
+}
+
+#right10 {
+    display: none;
+}
+
+#right11 {
+    display: none;
+}
+
+#right12 {
+    display: none;
+}
+
+#right13 {
+    display: none;
+}
+
+#right14 {
+    display: none;
+}
+
+#right15 {
+    display: none;
+}
+
+
+/*left*/
 #left {
     height: 45rem;
     float: left;
-    margin-top: -2rem;
+}
+
+#left2 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 44.8rem;
+    float: left;
+}
+
+#left3 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 89rem;
+    float: left;
+}
+
+#left4 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 133.5rem;
+    float: left;
+}
+
+#left5 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 178rem;
+    float: left;
+}
+
+#left6 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 222rem;
+    float: left;
+}
+
+#left7 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 266.5rem;
+    float: left;
+}
+
+#left8 {
+    height: 46rem;
+    margin-left: -4.55rem;
+    margin-top: 311rem;
+    margin-bottom: -2rem;
+    float: left;
+}
+
+#left9 {
+    height: 45rem;
+    margin-left: -4.55rem;
+    margin-top: 356rem;
+    margin-bottom: -2rem;
+    float: left;
+}
+
+#left10 {
+    display: none;
+}
+
+#left11 {
+    display: none;
+}
+
+#left12 {
+    display: none;
+}
+
+#left13 {
+    display: none;
+}
+
+#left14 {
+    display: none;
+}
+
+#left15 {
+    display: none;
 }
 
 /*menu*/
 ul {
-    margin-top: 10rem;
     /*    centrere menuen på siden*/
-    margin-right: 5rem;
     width: 100%;
     height: 60px;
 }
@@ -74,14 +252,9 @@ ul li a {
     font-family: 'Amatic SC', cursive;
     color: sandybrown;
     float: left;
-    padding: 1rem;
-}
-
-/*hover effekt over menuen */
-ul li a span:hover {
-    background-color: rgb(233, 237, 200);
-    animation: pulse 2s;
-    color: #6A7E6F;
+    padding: 0.8rem;
+    margin-top: -3.5rem;
+    margin-left: 0rem;
 }
 
 /*pulse animation til menuen*/
@@ -99,13 +272,26 @@ ul li a span:hover {
     }
 }
 
+/*hover effekt over menuen */
+ul li a span:hover {
+    background-color: rgb(233, 237, 200);
+    animation: pulse 2s;
+}
+
 /*burger menu*/
+#menu-bar {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
 #menu {
     width: 35px;
     height: 30px;
-    margin: 30px 0 20px 20px;
+    margin: 0;
     cursor: pointer;
-    margin-left: 8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 /*    når menuen lukker*/
@@ -134,7 +320,7 @@ ul li a span:hover {
 .nav {
     display: none;
     padding: 0;
-    margin: 0 20px;
+    margin: -12px 4rem;
     transition: 0.3s ease;
 }
 
@@ -161,4 +347,593 @@ ul li a span:hover {
 }
 
 /*responsive*/
-@media (max-width: 1189px)
+.responsive {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: rgba(244, 164, 96, 0.24);
+}
+
+#responsive_billede {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    width: 46vw;
+}
+
+#responsive_billede2 {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    width: 46vw;
+}
+
+#responsive_tekst {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+/*ide*/
+.ide {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: white;
+}
+
+#ide_tekst {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#moodboard {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/*prototype*/
+.prototype {
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: rgba(244, 164, 96, 0.24);
+}
+
+#prototype_billede {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#prototype_billede2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#prototype_tekst {
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+/*pitch*/
+.pitch {
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: white;
+}
+
+#pitch_billede {
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+#pitch_billede2 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+#pitch_tekst {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+/*design*/
+.design {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: rgba(244, 164, 96, 0.24);
+}
+
+#design_tekst {
+    grid-column: 3/5;
+    grid-row: 1/4;
+}
+
+#spil {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#spil2 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#inspo {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#inspo2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/*spil*/
+.individuel_spil {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: white;
+}
+
+#karakter {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 30vw;
+    margin-top: 12vw;
+}
+
+#spil_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/*pilotprojekt*/
+.pilot {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 0.5rem;
+    background-color: rgba(244, 164, 96, 0.24);
+}
+
+#rigmor2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 40vw;
+    margin-left: 22vw;
+}
+
+#pilot_tekst {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+/*redesign*/
+.redesign {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 4.5rem;
+    padding: 2rem;
+    grid-gap: 1.5rem;
+    background-color: white;
+}
+
+#redesign_tekst {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+#wireframe {
+    grid-column: 3/4;
+    grid-row: 1/2
+}
+
+#redesign_billede {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#moodboard2 {
+    grid-column: 3/5;
+    grid-row: 2/3
+}
+
+/*ipad version*/
+@media (max-width: 944px) {
+    ul li a {
+        float: none;
+    }
+
+    .responsive {
+        margin-top: 30vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #right9 {
+        display: none;
+    }
+
+    #left9 {
+        display: none;
+    }
+}
+
+/*mobile version*/
+@media (max-width: 490px) {
+
+    /*    repsonsive*/
+    .responsive {
+        margin-top: 60vw;
+    }
+
+    .responsive {
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+
+    #responsive_billede {
+        grid-column: 1/1;
+        grid-row: 3/4;
+        width: 50vw;
+    }
+
+    #responsive_billede2 {
+        grid-column: 1/1;
+        grid-row: 2/3;
+        width: 50vw;
+    }
+
+    #responsive_tekst {
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+
+    /*    ide*/
+    .ide {
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr;
+    }
+
+    #ide_tekst {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #moodboard {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    /*    prototype*/
+    .prototype {
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+        margin-left: 4.5rem;
+        padding: 2rem;
+        grid-gap: 1.5rem;
+        background-color: rgba(244, 164, 96, 0.24);
+    }
+
+    #prototype_billede {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 26vw;
+    }
+
+    #prototype_billede2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 26vw;
+    }
+
+    #prototype_tekst {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    /*    pitch*/
+    .pitch {
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr 1fr;
+        margin-left: 4.5rem;
+        padding: 2rem;
+        grid-gap: 1.5rem;
+        background-color: white;
+    }
+
+    #pitch_billede {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #pitch_billede2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #pitch_tekst {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /*    designdokumenation*/
+    .design {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr;
+        grid-gap: 0vw;
+    }
+
+    #design_tekst {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #spil {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #spil2 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #inspo {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #inspo2 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    /*    spil*/
+    .individuel_spil {
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr;
+        margin-right: 4.5rem;
+    }
+
+    #karakter {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 50vw;
+        margin-left: 5vw;
+    }
+
+    #spil_tekst {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /*pilotprojekt*/
+    .pilot {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 1fr;
+        margin-right: 4.5rem;
+    }
+
+    #rigmor2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 0vw;
+    }
+
+    #pilot_tekst {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    /*redesign*/
+
+    .redesign {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-right: 4.5rem;
+    }
+
+    #redesign_tekst {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    #wireframe {
+        grid-column: 3/4;
+        grid-row: 1/2
+    }
+
+    #redesign_billede {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    #moodboard2 {
+        grid-column: 3/5;
+        grid-row: 2/3
+    }
+
+    /*    redesign*/
+    .redesign {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr;
+    }
+
+    #redesign_tekst {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #wireframe {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #redesign_billede {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #moodboard2 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    /*    baggrund side-billeder*/
+    #right9 {
+        height: 45rem;
+        margin-right: -4.60rem;
+        margin-top: 356rem;
+        float: right;
+    }
+
+    #right10 {
+        display: inherit;
+        height: 45rem;
+        margin-right: -4.5rem;
+        margin-top: 357rem;
+        float: right;
+    }
+
+    #right11 {
+        display: inherit;
+        height: 45rem;
+        margin-right: -4.5rem;
+        margin-top: 402rem;
+        float: right;
+    }
+
+    #right12 {
+        display: inherit;
+        height: 45rem;
+        margin-right: -4.5rem;
+        margin-top: 447rem;
+        float: right;
+    }
+
+    #right13 {
+        display: inherit;
+        height: 45rem;
+        margin-right: -4.5rem;
+        margin-top: 492rem;
+        float: right;
+    }
+
+    #right14 {
+        display: inherit;
+        height: 45rem;
+        margin-right: -4.5rem;
+        margin-top: 537rem;
+        float: right;
+    }
+
+    #right15 {
+        display: inherit;
+        height: 45rem;
+        margin-right: -4.5rem;
+        margin-top: 581rem;
+        float: right;
+    }
+
+    #left9 {
+        height: 45rem;
+        margin-left: -4.55rem;
+        margin-top: 356rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
+
+    #left10 {
+        display: inherit;
+        height: 45rem;
+        margin-left: -4.54rem;
+        margin-top: 356rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
+
+    #left11 {
+        display: inherit;
+        height: 45rem;
+        margin-left: -4.54rem;
+        margin-top: 401rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
+
+    #left12 {
+        display: inherit;
+        height: 45rem;
+        margin-left: -4.54rem;
+        margin-top: 446rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
+
+    #left13 {
+        display: inherit;
+        height: 45rem;
+        margin-left: -4.54rem;
+        margin-top: 491rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
+
+    #left14 {
+        display: inherit;
+        height: 45rem;
+        margin-left: -4.54rem;
+        margin-top: 536rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
+
+    #left15 {
+        display: inherit;
+        height: 45rem;
+        margin-left: -4.54rem;
+        margin-top: 581rem;
+        margin-bottom: -2rem;
+        float: left;
+    }
