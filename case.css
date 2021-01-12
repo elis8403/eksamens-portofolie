@@ -452,6 +452,7 @@ ul li a span:hover {
     grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
     margin-left: 4.5rem;
+    margin-right: 4.5rem;
     padding: 2rem;
     grid-gap: 1.5rem;
     background-color: rgba(244, 164, 96, 0.24);
@@ -601,7 +602,7 @@ ul li a span:hover {
     .responsive {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0fr 0fr;
     }
 
     #responsive_billede {
@@ -625,7 +626,7 @@ ul li a span:hover {
     .ide {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0fr;
     }
 
     #ide_tekst {
@@ -642,7 +643,7 @@ ul li a span:hover {
     .prototype {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0fr 0fr;
         margin-left: 4.5rem;
         padding: 2rem;
         grid-gap: 1.5rem;
@@ -670,7 +671,7 @@ ul li a span:hover {
     .pitch {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0fr 0fr;
         margin-left: 4.5rem;
         padding: 2rem;
         grid-gap: 1.5rem;
@@ -729,7 +730,7 @@ ul li a span:hover {
     .individuel_spil {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0fr;
         margin-right: 4.5rem;
     }
 
